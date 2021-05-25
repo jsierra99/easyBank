@@ -1,0 +1,58 @@
+:root {
+  /* Primary Colors */
+  --primary-dark-blue: hsl(233, 26%, 24%);
+  --primary-lime-green: hsl(136, 65%, 51%);
+  --primary-bright-cyan: hsl(192, 70%, 51%);
+  /* Neutral Colors */
+  --neutral-grayish-blue: hsl(233, 8%, 62%);
+  --neutral-light-grayish-blue: hsl(220, 16%, 96%);
+  --neutral-very-light-gray: hsl(0, 0%, 98%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+:root {
+  --small-weight: 300;
+  --medium-weight: 400;
+  --large-weight: 700;
+}
+
+section.blog {
+  padding: 6rem 0;
+  background: var(--neutral-very-light-gray);
+}
+
+section.blog .container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+section.blog .container .grid_blog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+section.blog .container .grid_blog .blogs1 img {
+  width: 100%;
+}
+
+section.blog .container .grid_blog .blogs1 .blog_info {
+  background: var(--neutral-white);
+  padding: 1.75rem 1.5rem;
+}
+
+section.blog .container .grid_blog .blogs1 .blog_info h5, section.blog .container .grid_blog .blogs1 .blog_info p {
+  color: var(--neutral-grayish-blue);
+}
+
+section.blog .container .grid_blog .blogs1 .blog_info p {
+  line-height: 25px;
+  font-size: .9rem;
+}
+
+section.blog .container .grid_blog .blogs1 .blog_info h3 {
+  margin: .75rem 0;
+}
+/*# sourceMappingURL=blog.css.map */

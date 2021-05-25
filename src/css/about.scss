@@ -1,0 +1,57 @@
+@import "../abstracts/__fonts";
+@import "../abstracts/__colors";
+
+section.about
+{
+    background: var(--neutral-light-grayish-blue);
+    padding: 6rem 0;
+    position: relative;
+    margin-top: -300px;
+
+    .container
+    {
+        max-width: 80%;
+        margin: 0 auto;
+
+        p.subtitle_para
+        {
+            line-height: 0;
+        }
+
+        .grid_about
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 6rem;
+
+            .about1
+            {
+                h3
+                {
+                    font-size: 1.75rem;
+                    margin: 2rem 0;
+                }
+
+                p
+                {
+                    color: var(--neutral-grayish-blue);
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 615px) 
+{
+    section.about
+    {
+        margin-top: -10rem;
+
+        .container
+        {
+            text-align: center;
+        }
+    }
+}

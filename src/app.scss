@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    body
+    {
+        font-family: 'Bebas Neue', cursive;
+
+        button
+        {
+            outline: none;
+            border: none;
+            background-image: linear-gradient(to right, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da);
+            color: var(--neutral-white);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: .95rem;
+            cursor: pointer;
+        }
+
+        p.subtitle_para
+        {
+            color: var(--neutral-grayish-blue);
+            font-size: 1.25rem;
+            line-height: 25px;
+            font-weight: var(--small-weight);
+            margin-bottom: 2rem;
+        }
+
+        h1.sub_title
+        {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,155 @@
+@import "../abstracts/__colors";
+@import "../abstracts/__fonts";
+
+section.contact
+{
+    background: var(--primary-dark-blue);
+    padding: 3rem 0;
+
+    .container
+    {
+        max-width: 80%;
+        margin: 0 auto;
+
+        .flex_contact
+        {
+            display: flex;
+            justify-content: space-between;
+
+            .contacts1_left
+            {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+                .contacts2
+                {
+                    a
+                    {
+                        text-decoration: none;
+                        display: block;
+                        margin: 0 auto;
+                        color: var(--neutral-light-grayish-blue);
+                    }
+
+                    a:nth-child(2)
+                    {
+                        margin: 1rem 0;
+                    }
+                }
+
+                .contacts2_left
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-right: 6rem;
+
+                    .social_media
+                    {
+                        svg
+                        {
+                            margin-right: .75rem;
+                        }
+                    }
+                }
+            }
+
+            .contacts1
+            {
+                p
+                {
+                    color: var(--neutral-grayish-blue);
+                    letter-spacing: .5px;
+                    clear: both;
+                }
+
+                button
+                {
+                    display: flex;
+                    margin-left: auto;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 615px) 
+{
+    section.contact
+    {
+        .container
+        {
+            display: grid;
+            place-items: center;
+            
+            .flex_contact
+            {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                justify-items: center;
+
+                .contacts1
+                {
+                    display: block !important;
+                    clear: both !important;
+                    
+                    button
+                    {
+                        display: block;
+                        margin: 2.5rem auto 2rem auto;
+                        justify-content: center;
+                    }
+
+                    p
+                    {
+                        text-align: center;
+                    }
+                }
+    
+                .contacts1_left
+                {
+                    grid-template-columns: 1fr !important;
+                    justify-items: center !important;
+                    justify-content: center;
+
+                    .contacts2
+                    {
+                        margin-top: 1rem;
+                        
+                        a
+                        {
+                            text-align: center;
+                        }
+                    }
+    
+                    .contacts2_left
+                    {
+                        margin-bottom: 1.5rem;
+                        margin-right: 0 !important;
+
+                        img
+                        {
+                            display: block;
+                            margin: 0 auto;
+                        }
+
+                        .social_media
+                        {
+                            display: grid;
+                            grid-template-columns: repeat(5, 1fr);
+                            justify-items: center;
+                            justify-content: center;
+                            margin-top: 2rem;
+    
+                            svg
+                            {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }

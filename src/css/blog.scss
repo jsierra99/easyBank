@@ -1,0 +1,51 @@
+@import "../abstracts/__colors";
+@import "../abstracts/__fonts";
+
+section.blog
+{
+    padding: 6rem 0;
+    background: var(--neutral-very-light-gray);
+
+    .container
+    {
+        max-width: 80%;
+        margin: 0 auto;
+
+        .grid_blog
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+
+            .blogs1
+            {   
+                img
+                {
+                    width: 100%;
+                }
+
+                .blog_info
+                {
+                    background: var(--neutral-white);
+                    padding: 1.75rem 1.5rem;
+
+                    h5, p
+                    {
+                        color: var(--neutral-grayish-blue);
+                    }
+
+                    p
+                    {
+                        line-height: 25px;
+                        font-size: .9rem;
+                    }
+
+                    h3
+                    {
+                        margin: .75rem 0;
+                    }
+                }
+            }
+        }
+    }
+}

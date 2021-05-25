@@ -1,0 +1,119 @@
+:root {
+  /* Primary Colors */
+  --primary-dark-blue: hsl(233, 26%, 24%);
+  --primary-lime-green: hsl(136, 65%, 51%);
+  --primary-bright-cyan: hsl(192, 70%, 51%);
+  /* Neutral Colors */
+  --neutral-grayish-blue: hsl(233, 8%, 62%);
+  --neutral-light-grayish-blue: hsl(220, 16%, 96%);
+  --neutral-very-light-gray: hsl(0, 0%, 98%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+:root {
+  --small-weight: 300;
+  --medium-weight: 400;
+  --large-weight: 700;
+}
+
+section.home {
+  background: var(--neutral-very-light-gray);
+  overflow-x: hidden;
+}
+
+section.home .container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+section.home .container .grid_home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 1fr;
+      grid-template-columns: 40% 1fr;
+  gap: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.home .container .grid_home .home_info {
+  position: relative;
+  margin-bottom: 170px;
+}
+
+section.home .container .grid_home .home_info h1 {
+  font-size: 4rem;
+  font-weight: var(--small-weight);
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+section.home .container .grid_home .home_images_mobile {
+  display: none;
+}
+
+section.home .container .grid_home .home_images {
+  position: relative;
+  top: -45px;
+  left: 30px;
+  z-index: 9;
+}
+
+section.home .container .grid_home .home_images img.home_background {
+  position: relative;
+  top: -120px;
+  left: -65px;
+}
+
+section.home .container .grid_home .home_images img.home_overlap {
+  position: absolute;
+  top: 0;
+  left: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+  section.home {
+    padding-top: 80px;
+  }
+  section.home .container {
+    max-width: 100%;
+  }
+  section.home .container h1 {
+    font-size: 3rem !important;
+  }
+  section.home .container .grid_home {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  section.home .container .grid_home .home_images {
+    display: none;
+  }
+  section.home .container .grid_home .home_images_mobile {
+    display: block;
+    position: relative;
+    top: -70px;
+  }
+  section.home .container .grid_home .home_images_mobile img.home_background_mobile {
+    width: 100%;
+  }
+  section.home .container .grid_home .home_images_mobile .home_overlap_mobile {
+    position: absolute;
+    top: -150px;
+    width: 100%;
+    left: 0;
+  }
+  section.home .container .grid_home .home_info {
+    padding: 10%;
+    position: relative;
+    margin-top: -15rem;
+  }
+  section.home .container .grid_home .home_info p, section.home .container .grid_home .home_info h1 {
+    text-align: center;
+  }
+  section.home .container .grid_home .home_info button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=home.css.map */

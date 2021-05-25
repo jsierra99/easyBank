@@ -1,0 +1,129 @@
+:root {
+  /* Primary Colors */
+  --primary-dark-blue: hsl(233, 26%, 24%);
+  --primary-lime-green: hsl(136, 65%, 51%);
+  --primary-bright-cyan: hsl(192, 70%, 51%);
+  /* Neutral Colors */
+  --neutral-grayish-blue: hsl(233, 8%, 62%);
+  --neutral-light-grayish-blue: hsl(220, 16%, 96%);
+  --neutral-very-light-gray: hsl(0, 0%, 98%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+:root {
+  --small-weight: 300;
+  --medium-weight: 400;
+  --large-weight: 700;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10%;
+  z-index: 999;
+  background: var(--neutral-white);
+}
+
+header img.hamburger {
+  display: none;
+}
+
+header img.x {
+  display: none;
+  cursor: pointer;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--neutral-grayish-blue);
+  font-weight: var(--medium-weight);
+  letter-spacing: .5px;
+}
+
+@media only screen and (max-width: 850px) {
+  header img.hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  header img.open {
+    display: block;
+  }
+  header img.close {
+    display: none;
+  }
+  header img.open_ham {
+    display: block;
+  }
+  header img.close_icon {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  header button {
+    display: none;
+  }
+  header.show {
+    height: 55px;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 23px;
+    z-index: 999;
+  }
+  header.show img.logo {
+    margin-right: auto;
+  }
+  header.show nav {
+    display: block;
+    margin: 2rem auto 0 auto;
+    height: 300px;
+    width: 400px;
+    z-index: 99;
+    background: #fff;
+    position: relative;
+    padding-top: 2rem;
+    border-radius: 10px;
+  }
+  header.show nav ul li {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  header.show img.open {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header.show nav {
+    height: 225px;
+    width: 295px;
+  }
+  header.show nav ul li {
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=header.css.map */
